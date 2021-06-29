@@ -10,14 +10,6 @@
   --cor-titulo: #e90c0c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cor-bg: #000;
-    --cor-recipiente: linear-gradient(to bottom, #2d7266, #333d9b 80%);
-    --cor-font: #fff;
-    --cor-titulo: #f92121;
-  }
-}
 
 body {
   background-color: var(--cor-bg);
@@ -182,3 +174,11 @@ article {
 /* coloque aqui a media query para sobrescrever o valor
    das custom properties para o modo escuro */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-bg: #000;
+    --cor-recipiente: linear-gradient(to bottom, #2d7266, #333d9b 80%);
+    --cor-font: #fff;
+    --cor-titulo: #f92121;
+  }
+}
